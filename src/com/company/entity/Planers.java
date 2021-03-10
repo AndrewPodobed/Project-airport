@@ -2,14 +2,14 @@ package com.company.entity;
 
 public class Planers {
     private int id;
-    private String brend;
+    private String brand;
     private String model;
     private int countPassengers;
     private String numAirplane;
 
-    public Planers(String brend, String model, int countPassengers, String numAirplane) {
+    public Planers(String brand, String model, int countPassengers, String numAirplane) {
 //        this.id = id;
-        this.brend = brend;
+        this.brand = brand;
         this.model = model;
         this.countPassengers = countPassengers;
         this.numAirplane = numAirplane;
@@ -19,8 +19,8 @@ public class Planers {
 //        return id;
 //    }
 
-    public String getBrend() {
-        return brend;
+    public String getBrand() {
+        return brand;
     }
 
     public String getModel() {
@@ -39,7 +39,7 @@ public class Planers {
     public String toString() {
         return "Planers{" +
 //                "id=" + id +
-                "brend='" + brend + '\'' +
+                "brand='" + brand + '\'' +
                 ", model='" + model + '\'' +
                 ", countPassengers=" + countPassengers +
                 ", numAirplane='" + numAirplane + '\'' +

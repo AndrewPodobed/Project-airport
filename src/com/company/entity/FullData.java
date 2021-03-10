@@ -7,7 +7,7 @@ public class FullData {
     private Date date;
     private String time;
     private String numAirplane;
-    private String brend;
+    private String brand;
     private String model;
     private int countPassengers;
     private  String firstName;
@@ -20,7 +20,7 @@ public class FullData {
         this.date = date;
         this.time = time;
         this.numAirplane = numAirplane;
-        this.brend = brend;
+        this.brand = brand;
         this.model = model;
         this.countPassengers = countPassengers;
         this.firstName = firstName;
@@ -51,8 +51,8 @@ public class FullData {
         return numAirplane;
     }
 
-    public String getBrend() {
-        return brend;
+    public String getBrand() {
+        return brand;
     }
 
     public String getModel() {
@@ -85,7 +85,7 @@ public class FullData {
                 ", Дата: " + date +
                 ", Время: " + time +
                 ", Бортовой номер: " + numAirplane +
-                ", Марка самолета: " + brend +
+                ", Марка самолета: " + brand +
                 " " + model +
                 ", Пассажирских мест: " + countPassengers +
                 ", Пилот:" + firstName +

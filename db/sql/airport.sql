@@ -10,7 +10,7 @@ PRIMARY KEY (id)
 );
 CREATE TABLE planer(
 id INT auto_increment,
-brend VARCHAR (255) NOT NULL,
+brand VARCHAR (255) NOT NULL,
 model VARCHAR (255) NOT NULL,
 count_passengers INT NOT NULL,
 num_airplane VARCHAR (100) UNIQUE NOT NULL,
