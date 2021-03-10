@@ -7,7 +7,7 @@ import java.sql.SQLException;
 public class ConnectionUtil {
     public static final String URL = "jdbc:mysql://localhost:3306/airport_db?useUnicode=true&serverTimezone=UTC";
     public static final String USER = "root";
-    public static final String PASS = "robin2107";
+    public static final String PASS = "root";
 
     public static Connection getConnection() {
         Connection connection = null;
