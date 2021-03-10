@@ -84,7 +84,7 @@ public class FullData {
                 " " + model +
                 ", Пассажирских мест: " + countPassengers +
                 ", Пилот:" + firstName +
-                " " + lastName +
+                " " + lastName + "." +
                 ", Ранг: " + pilotRange +
                 "(" + pilotCode + ")"
                 ;

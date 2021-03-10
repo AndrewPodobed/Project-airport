@@ -38,7 +38,7 @@ public class FullDataReader {
                 String pilotRange = resultSet.getString("pilot_range");
                 String pilotCode = resultSet.getString("pilot_code");
 
-                result.add(new FullData(flightsNum, date, time, numAirplane, brand, model, countPassengers, lastName, firstName, pilotRange, pilotCode));
+                result.add(new FullData(flightsNum, date, time, numAirplane, brand, model, countPassengers, lastName, firstName.substring(0,1), pilotRange, pilotCode));
             }
 
         } catch (SQLException e) {
