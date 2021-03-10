@@ -27,7 +27,7 @@ public class ResultCSVWriter{
                         + "; " + result.getFirstName()
                         + " " + result.getLastName()
                         + ".; " + result.getPilotCode()
-                        + "(" + result.getRange() + ")"
+                        + "(" + result.getPilotRange() + ")"
 
                         + "\n");
 

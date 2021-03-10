@@ -2,6 +2,7 @@ package com.company.DataBaseUtil.reader;
 
 import com.company.DataBaseUtil.ConnectionUtil;
 import com.company.entity.FullData;
+import com.company.entity.PilotRange;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
