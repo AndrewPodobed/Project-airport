@@ -15,7 +15,7 @@ public class FullData {
     private String pilotRange;
     private String pilotCode;
 
-    public FullData(String flightsNum, Date date, String time, String numAirplane, String brend, String model, int countPassengers, String firstName, String lastName, String pilotRange, String pilotCode) {
+    public FullData(String flightsNum, Date date, String time, String numAirplane, String brand, String model, int countPassengers, String firstName, String lastName, String pilotRange, String pilotCode) {
         this.flightsNum = flightsNum;
         this.date = date;
         this.time = time;
@@ -29,11 +29,6 @@ public class FullData {
         this.pilotCode = pilotCode;
     }
 
-//    public FullData(int id, int flightsNum, Date date, String time, String numAirplane, String brend, String model, int countPassengers, String lastName, String firstName, String pilotRange, String pilotCode) {
-//    }
-
-//    public FullData(int flightsNum, Date date, String time, String numAirplane, String brend, String model, int countPassengers, String lastName, String firstName, String pilotRange, String pilotCode) {
-//    }
 
     public String getFlightsNum() {
         return flightsNum;
