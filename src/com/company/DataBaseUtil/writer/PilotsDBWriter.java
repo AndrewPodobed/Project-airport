@@ -25,8 +25,8 @@ public class PilotsDBWriter {
             } catch (SQLException e) {
                 e.printStackTrace();
             }
-            System.out.println("Запись в таблицу 'pilot' завершена");
         }
+        System.out.println("Запись в таблицу 'pilot' завершена");
     }
 
 }

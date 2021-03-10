@@ -4,7 +4,7 @@ import com.company.DataBaseUtil.reader.FullDataReader;
 import com.company.DataBaseUtil.writer.FlightsDBWriter;
 import com.company.DataBaseUtil.writer.PilotsDBWriter;
 import com.company.DataBaseUtil.writer.PlanersDBWriter;
-import com.company.ResultVWriter.ResultCSVWriter;
+import com.company.ResultWriter.ResultCSVWriter;
 import com.company.entity.Flights;
 import com.company.entity.FullData;
 import com.company.entity.Pilots;
@@ -14,7 +14,6 @@ import com.company.reader.PilotDataReader;
 import com.company.reader.PlanerDataReader;
 
 import java.io.IOException;
-import java.util.ArrayList;
 import java.util.List;
 
 public class Main {
@@ -33,17 +32,21 @@ public class Main {
         PlanersDBWriter.write(planersList);
         planersList.forEach(System.out::println);
 
+        System.out.println("");
+
         FlightsDataReader flightsDataReader = new FlightsDataReader("db\\data\\flights.csv");
         List<Flights> flightsList = flightsDataReader.read();
         FlightsDBWriter.write(flightsList);
         flightsList.forEach(System.out::println);
 //
-//        System.out.println("");
+        System.out.println("");
 
         FullDataReader.read().forEach(System.out::println);
 
+        System.out.println("");
+
         FullDataReader fullDataReader = new FullDataReader();
-        List<FullData> fullDataList = fullDataReader.read();
+        List<FullData> fullDataList = FullDataReader.read();
         ResultCSVWriter.writeResult("result\\result.csv", fullDataList);
     }
 }

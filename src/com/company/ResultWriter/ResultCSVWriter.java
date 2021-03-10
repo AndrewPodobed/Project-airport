@@ -1,6 +1,5 @@
-package com.company.ResultVWriter;
+package com.company.ResultWriter;
 
-import com.company.DataBaseUtil.reader.FullDataReader;
 import com.company.entity.FullData;
 
 import java.io.FileWriter;
@@ -8,6 +7,12 @@ import java.io.IOException;
 import java.util.List;
 
 public class ResultCSVWriter{
+
+    private final String fileName;
+
+    public ResultCSVWriter(String fileName) {
+        this.fileName = fileName;
+    }
 
     public static void writeResult(String fileName, List<FullData> fullDataList) throws IOException {
         try (FileWriter writer = new FileWriter(fileName)) {
