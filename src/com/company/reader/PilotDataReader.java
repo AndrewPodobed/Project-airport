@@ -3,6 +3,7 @@ package com.company.reader;
 import com.company.builder.FlightsBuilder;
 import com.company.builder.PilotsBuilder;
 import com.company.entity.Flights;
+import com.company.entity.PilotRange;
 import com.company.entity.Pilots;
 
 import java.io.BufferedReader;
@@ -28,8 +29,7 @@ public class PilotDataReader implements FileDataReader{
             String pilotsLine = null;
 
             while ((pilotsLine = reader.readLine()) != null) {
-                Pilots pilots = PilotsBuilder.build(pilotsLine);
-
+                Pilots pilots = (Pilots) PilotsBuilder.build(pilotsLine);
                 pilotsList.add(pilots);
             }
 

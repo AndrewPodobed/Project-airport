@@ -12,10 +12,12 @@ public class FullData {
     private int countPassengers;
     private  String firstName;
     private String lastName;
-    private String pilotRange;
+    private PilotRange pilotRange;
     private String pilotCode;
 
-    public FullData(String flightsNum, Date date, String time, String numAirplane, String brand, String model, int countPassengers, String firstName, String lastName, String pilotRange, String pilotCode) {
+
+
+    public FullData(String flightsNum, Date date, String time, String numAirplane, String brand, String model, int countPassengers, String firstName, String lastName, PilotRange pilotRange, String pilotCode) {
         this.flightsNum = flightsNum;
         this.date = date;
         this.time = time;
@@ -27,6 +29,7 @@ public class FullData {
         this.lastName = lastName;
         this.pilotRange = pilotRange;
         this.pilotCode = pilotCode;
+
     }
 
 
@@ -66,7 +69,7 @@ public class FullData {
         return lastName;
     }
 
-    public String getPilotRange() {
+    public PilotRange getPilotRange() {
         return pilotRange;
     }
 

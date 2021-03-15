@@ -22,11 +22,12 @@ public class PilotsDBWriter {
                 statement.setString(4, pilots.getPilotCode());
 
                 statement.executeUpdate();
+
             } catch (SQLException e) {
                 e.printStackTrace();
             }
         }
-        System.out.println("Запись в таблицу 'pilot' завершена");
+
     }
 
 }

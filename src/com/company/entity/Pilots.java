@@ -8,16 +8,12 @@ public class Pilots {
     private String pilotCode;
 
     public Pilots(String firstName, String lastName, String pilotRange, String pilotCode) {
-//        this.id = id;
         this.firstName = firstName;
         this.lastName = lastName;
         this.pilotRange = pilotRange;
         this.pilotCode = pilotCode;
     }
 
-//    public int getId() {
-//        return id;
-//    }
 
     public String getFirstName() {
         return firstName;

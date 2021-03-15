@@ -23,10 +23,11 @@ public class PlanersDBWriter {
                 statement.setString(4, planer.getNumAirplane());
 
                 statement.executeUpdate();
+
             } catch (SQLException e) {
                 e.printStackTrace();
             }
         }
-        System.out.println("Запсиь в таблицу 'planers' завершена");
+
     }
 }

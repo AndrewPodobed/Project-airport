@@ -15,10 +15,6 @@ public class Planers {
         this.numAirplane = numAirplane;
     }
 
-//    public int getId() {
-//        return id;
-//    }
-
     public String getBrand() {
         return brand;
     }

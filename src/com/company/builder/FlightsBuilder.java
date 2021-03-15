@@ -10,7 +10,6 @@ public class FlightsBuilder {
     public static Flights build(String flightsLine) {
         String[] flightsData = flightsLine.split(";");
 
-//        int id = Integer.parseInt(flightsData[0]);
         int airplaneId = Integer.parseInt(flightsData[0]);
         int pilotId = Integer.parseInt(flightsData[1]);
         String dateNum = flightsData[2];

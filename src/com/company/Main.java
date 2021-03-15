@@ -20,28 +20,31 @@ public class Main {
 
     public static void main(String[] args) throws IOException {
 
-//        PilotDataReader pilotDataReader = new PilotDataReader("db\\data\\pilot.csv");
-//        List<Pilots> pilotsList= pilotDataReader.read();
-//        PilotsDBWriter.write(pilotsList);
-//        pilotsList.forEach(System.out::println);
-//
-//        System.out.println("");
-//
-//        PlanerDataReader planerDataReader = new PlanerDataReader("db\\data\\planer.csv");
-//        List<Planers> planersList = planerDataReader.read();
-//        PlanersDBWriter.write(planersList);
-//        planersList.forEach(System.out::println);
-//
-//        System.out.println("");
-//
-//        FlightsDataReader flightsDataReader = new FlightsDataReader("db\\data\\flights.csv");
-//        List<Flights> flightsList = flightsDataReader.read();
-//        FlightsDBWriter.write(flightsList);
-//        flightsList.forEach(System.out::println);
-////
-//        System.out.println("");
-//
-//        FullDataReader.read().forEach(System.out::println);
+        PilotDataReader pilotDataReader = new PilotDataReader("db\\data\\pilot.csv");
+        List<Pilots> pilotsList= pilotDataReader.read();
+        PilotsDBWriter.write(pilotsList);
+        pilotsList.forEach(System.out::println);
+        System.out.println("Запись в таблицу 'pilot' завершена");
+
+        System.out.println("");
+
+        PlanerDataReader planerDataReader = new PlanerDataReader("db\\data\\planer.csv");
+        List<Planers> planersList = planerDataReader.read();
+        PlanersDBWriter.write(planersList);
+        planersList.forEach(System.out::println);
+        System.out.println("Запись в таблицу 'planer' завершена");
+
+        System.out.println("");
+
+        FlightsDataReader flightsDataReader = new FlightsDataReader("db\\data\\flights.csv");
+        List<Flights> flightsList = flightsDataReader.read();
+        FlightsDBWriter.write(flightsList);
+        flightsList.forEach(System.out::println);
+        System.out.println("Запись в таблицу 'flights' завершена");
+
+        System.out.println("");
+
+        FullDataReader.read().forEach(System.out::println);
 
         System.out.println("");
 

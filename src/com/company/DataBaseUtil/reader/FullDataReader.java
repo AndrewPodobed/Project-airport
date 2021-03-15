@@ -26,7 +26,6 @@ public class FullDataReader {
             ResultSet resultSet = statement.executeQuery();
 
             while (resultSet.next()) {
-//                int id = resultSet.getInt("id");
                 String flightsNum = resultSet.getString("flights_num");
                 Date date = resultSet.getDate("date_num");
                 String time = resultSet.getString("time_num");
@@ -39,7 +38,9 @@ public class FullDataReader {
                 String pilotRange = resultSet.getString("pilot_range");
                 String pilotCode = resultSet.getString("pilot_code");
 
-                result.add(new FullData(flightsNum, date, time, numAirplane, brand, model, countPassengers, lastName, firstName.substring(0,1), pilotRange, pilotCode));
+                PilotRange range = PilotRange.getByRange(pilotRange);
+                
+                result.add(new FullData(flightsNum, date, time, numAirplane, brand, model, countPassengers, lastName, firstName.substring(0,1), range, pilotCode));
             }
 
         } catch (SQLException e) {

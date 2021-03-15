@@ -33,11 +33,12 @@ public class FlightsDBWriter {
 
                 statement.executeUpdate();
 
+
             } catch (SQLException | ParseException e) {
                 e.printStackTrace();
             }
         }
-        System.out.println("Запись в таблицу 'flights' завершена");
+
 
     }
 

@@ -4,7 +4,6 @@ import java.sql.Date;
 import java.time.format.DateTimeFormatter;
 
 public class Flights {
-//    private int id;
     private int airplaneId;
     private int pilotId;
     private String date;
@@ -12,18 +11,12 @@ public class Flights {
     private String flightsNum;
 
     public Flights(int airplaneId, int pilotId, String date, String time, String flightsNum) {
-//        this.id = id;
         this.airplaneId = airplaneId;
         this.pilotId = pilotId;
         this.date = date;
         this.time = time;
         this.flightsNum = flightsNum;
     }
-
-
-//    public int getId() {
-//        return id;
-//    }
 
     public int getAirplaneId() {
         return airplaneId;
